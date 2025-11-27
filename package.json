@@ -1,0 +1,32 @@
+{
+  "name": "product-store-with-mern",
+  "version": "1.0.0",
+  "description": "A web application of a simple product store built with MERN stack.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "NODE_ENV=production node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imjustinliao/Product-Store-with-MERN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/imjustinliao/Product-Store-with-MERN/issues"
+  },
+  "homepage": "https://github.com/imjustinliao/Product-Store-with-MERN#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
